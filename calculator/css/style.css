@@ -1,0 +1,60 @@
+.navbar-brand {
+	font-family: 'Just Another Hand', Times;
+	font-size: 30px;
+}
+.jumbotron {
+	background-color: #737373;
+	margin-top: 20px;
+	padding-top: 80px;
+	font-family: 'Lato', sans-serif;
+}
+.jumbotron div.Calculator {
+	border: 1px solid;
+	border-radius: 20px;
+	width: 300px;
+	margin: 0 auto;
+	padding: 20px 18px;
+	background-color: rgb(238, 238, 238);
+	box-shadow: inset 0px -2px 10px #333333;
+}
+
+div.Calculator #result {
+	font-size: 30px;
+	border: 1px solid #B2B292;
+	background-color: #C7C7B0;
+	border-radius: 10px;
+	height: 50px;
+	margin: 10px 10px;
+	padding: 3px 10px;
+	text-align: right;
+}
+
+.jumbotron h1 {
+	font-family: 'Pacifico', Times;
+	font-size: 30px;
+}
+
+.jumbotron h3 {
+	font-size: 15px;
+}
+.jumbotron button {
+	width: 55px;
+	font-size: 25px;
+	margin: 5px;
+}
+
+#plusButton {
+	height: 100px;
+}
+
+
+footer h3 {
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+}
+
+footer div#contact {
+	margin: 0 auto;
+	text-align: center;
+}
