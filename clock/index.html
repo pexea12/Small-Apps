@@ -1,11 +1,151 @@
 <html>
 <head>
+    <meta charset="UTF-8" />
     <title>Pomodoro Clock</title>
-    <meta name="viewport" content="">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./dist/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./dist/css/social-buttons.css">
+	
+	<style>
+		.navbar-brand {
+			font-family: 'Just Another Hand', Times;
+			font-size: 30px;
+		}
+
+		.jumbotron {
+			background-color: #737373;
+			margin-top: 20px;
+			padding-top: 80px;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.PomodoroClock {
+			width: 500px;
+			margin: 0 auto;
+			padding: 20px 18px;
+		}
+
+		.PomodoroClock h1 {
+			font-family: 'Pacifico', Times;
+			font-size: 30px;
+		}
+
+		.PomodoroClock .setting div {
+			width: 50%;
+			display: inline-block;
+		}
+
+		.PomodoroClock .setting #select {
+			display: block;
+			margin: 0 auto;
+		}
+
+		.PomodoroClock .setting h3 {
+			text-transform: uppercase;
+			font-size: 18px;
+		}
+
+		.PomodoroClock .setting button {
+			width: 33px;
+			padding: 5px 5px;
+		}
+
+		.PomodoroClock .setting span {
+			font-weight: bold;
+			font-size: 20px;
+			margin-left: 7px;
+    		margin-right: 7px;
+		}
+
+		.PomodoroClock #display {
+			display: block;
+			border: 3px solid #CCCC00;
+			width: 300px;
+			height: 300px;
+			margin: 0 auto;
+			margin-top: 80px;
+			border-radius: 50%;
+			background-color: #666666;
+		}
+
+		.PomodoroClock #display h3 {
+			padding-top: 60px;
+			text-transform: uppercase;
+			font-size: 35px;
+			color: white;
+		}
+
+		.PomodoroClock #display h5 {
+			padding-top: 25px;
+			font-size: 25px;
+			font-weight: bold;
+			font-size: 'Just Another Hand', sans-serif;
+		}
+
+		.PomodoroClock #display h6 {
+			font-size: 50px;
+		}
+
+		footer h3 {
+			font-weight: bold;
+			font-size: 25px;
+			font-family: 'Lato', sans-serif;
+		}
+
+		footer div#contact {
+			margin: 0 auto;
+			text-align: center;
+		}
+
+	</style>
+
+	<script src="./dist/js/jquery-1.11.3.min.js"></script>
+	<script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/react.js"></script>
+    <script src="./dist/js/react-dom.js"></script>
+    <script src="./dist/js/browser.min.js"></script>
 </head>
+
 <body>
-    <script src="/js/vendor/react-0.14.3.js"></script>
-    <script src="/js/vendor/react-dom-0.14.3.js"></script>
+	<nav class="navbar navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">PEXEA12</a>
+			</div> <!-- .navbar-header -->
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+				</ul> 
+			</div> <!-- collapse navbar-collapse -->
+		</div> <!-- container -->
+	</nav>
+
+	<div class="jumbotron">
+		<div id="app">
+			
+		</div>
+	</div>
+
+	<footer>
+		<div>
+			<h3 class="text-center">Contact Me</h3>
+			<div id="contact">
+				<a href="https://github.com/pexea12" class="btn btn-social btn-github"><i class="fa fa-github"></i> Github</a>
+				<a href="https://twitter.com/pexea12" class="btn btn-social btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+			</div>
+		</div>
+	</footer>
+
+<script type="text/babel" src="./clock/js/PomodoroClock.js"></script>
 </body>
+
 </html>
