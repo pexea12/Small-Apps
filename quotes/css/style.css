@@ -1,0 +1,71 @@
+body {
+	text-align: center;
+	font-family: 'Radley', sans-serif;
+	font-size: 20px;
+}
+
+nav .navbar-brand {
+	font-family: 'Just Another Hand', sans-serif;
+	font-size: 30px;
+}
+
+.jumbotron {
+	padding-bottom: 100px;
+}
+
+#quotes {
+	margin-top: 50px;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+#quotes h1 {
+	font-size: 60px;
+	font-family: 'Tangerine', sans-serif;
+	text-shadow: 4px 4px 4px gray;
+}
+
+#quotes p {
+	text-align: center;
+	padding: 20px;
+}
+
+#quotes button#new-quote {
+	font-size: 20px;
+	margin: 20px auto;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 3px 4px 4px gray;
+}
+
+#quotes .quote img {
+	border: 1px solid black;
+	border-radius: 20px;
+	width: 252px;
+	height: 182px;
+	box-shadow: 3px 4px 4px gray;
+	float: left;
+	margin-right: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#quotes .quote h3 {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#quotes .quote p {
+	text-align: justify;
+}
+
+footer h3 {
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+footer #contact a {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
