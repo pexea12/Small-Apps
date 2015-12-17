@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>Local Weather</title>
+	<meta charset="utf-8">
+
+	<link href='https://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Tangerine|Radley' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="./weather/css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar'>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Pexea12</a>
+			</div> <!-- .navbar-header -->
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid" id="main">
+		<h1 class="text-center">Local Weather</h1>
+		<div id="info">
+			<h2 class="text-center">City</h2>
+			<h3 class="text-center">Description</h3>
+			<h4 class="text-center">
+				<img src="http://openweathermap.org/img/w/10d.png" alt="symbol"> Temperature
+			</h4>
+			<button class="btn btn-success">°C | °F</button>
+			<h5 class="text-center">Humidity</h5>
+		</div> <!-- #info -->
+	</div>
+
+	<footer>
+		<h3 class='text-center'>Contact Me</h3>
+		<div id='contact'>
+			<a class='btn btn-default' href="https://github.com/pexea12"><i class="fa fa-github"></i> Github</a>
+			<a class="btn btn-info" href="https://twitter.com/pexea12"><i class="fa fa-twitter"></i> Twitter</a>
+		</div>
+	</footer>
+
+	<script src="./dist/js/jquery-1.11.3.min.js"></script>
+	<script src="./dist/js/bootstrap.min.js"></script>
+	<script src="./weather/js/script.js"></script>
+</body>
+</html>
